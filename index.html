@@ -1,13 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/index.css" />
-        <title>JS starter</title>
-    </head>
-    <body>
-        <script type="module" src="./src/init.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <h1>Hourly Temperature Forecast</h1>
+    <div class="buttons">
+        <button onclick="filterData('today')">Today</button>
+        <button onclick="filterData('tomorrow')">Tomorrow</button>
+        <button onclick="filterData('all')">All 10 Days</button>
+    </div>
+    <div id="weather" class="weather-grid"></div>
+    </div>
+
+    <script src="./src/init.js"></script>
+</body>
 </html>
